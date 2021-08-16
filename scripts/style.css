@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+/* -- BODY -- */
+body{
+  font: 15px/1.6 'Play';
+  padding: 0;
+  margin: 0;
+
+  background-image: linear-gradient(#04619F, #000000), linear-gradient(#000000, #000000);
+  background-repeat: no-repeat, repeat;
+  color: #ffffff;
+}
+
 
 /* -- CLASSES -- */
 .page {
@@ -11,8 +22,6 @@
   margin: 5%;
 }
 
-
-/* -- IDs -- */
 .navList{
   display: none;
   position: absolute;
@@ -25,6 +34,11 @@
 /* -- HEADER -- */
 header{
   text-align: center;
+}
+
+header .current a{
+  font-weight: 900;
+  color: #4287f5;
 }
 
 /* -- NAVIGATION -- */
@@ -65,12 +79,16 @@ nav .navList li{
 nav li a{
   text-decoration: none;
   display: block;
+
+  color: #ffffff;
 }
 
 nav li a:hover{
-  font-weight: bold;
+  font-weight: 900;
+  color: #96cbff;
 }
 
+/*Drop down:*/
 .dropdown:hover .navList{
   display: contents;
   margin: inherit;
@@ -78,9 +96,3 @@ nav li a:hover{
 }
 
 /* ------------------------------------- */
-/* -- BODY -- */
-body{
-  font: 15px/1.6 'Play';
-  padding: 0;
-  margin: 0;
-}
